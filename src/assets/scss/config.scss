@@ -1,0 +1,39 @@
+// colors
+
+$neutral_dark_blue: hsl(209, 23%, 22%);
+$neutral_very_dark_blue: hsl(207, 26%, 17%);
+$neutral_very_dark_blue_2: hsl(200, 15%, 8%);
+$neutral_dark_gray: hsl(0, 0%, 52%);
+$neutral_light_gray: hsl(0, 0%, 98%);
+$neutral_white: hsl(0, 0%, 100%);
+
+// Colores
+
+$color_elements_dark_bg: $neutral_dark_blue;
+$color_body_dark_bg: $neutral_very_dark_blue;
+$color_content_dark_cl: $neutral_white;
+
+$color_elements_light_bg: $neutral_white;
+$color_body_light_bg: $neutral_light_gray;
+$color_content_light_cl: $neutral_very_dark_blue_2;
+
+// Texto
+
+$font-base: 16px;
+$font-name: 'Nunito Sans', sans-serif;
+$font-light: 300;
+$font-semi-blod: 600;
+$font-extra-bold: 800;
+
+// dimensiones
+
+$dim-desktop-vertical: 4.5rem;
+$dim-max-width: 80rem;
+$dim-inner-vertical: 1.5rem;
+
+$radius: 0.5em;
+
+// breakpoint
+
+$mobile: '(max-width: 49rem)';
+$desktop: '(min-width: 49rem)';

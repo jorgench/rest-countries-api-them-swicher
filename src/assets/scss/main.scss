@@ -1,0 +1,44 @@
+@import './normalze';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+@import './config';
+
+body {
+  font-size: $font-base;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-name;
+  font-weight: $font-light;
+}
+
+#app {
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+strong {
+  font-family: $font-name;
+  font-weight: $font-semi-blod;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-extra-bold;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+
+  & > li + li {
+    margin-top: 0.5em;
+  }
+}
+
+@import './utilities';
+@import './elements/index.scss';

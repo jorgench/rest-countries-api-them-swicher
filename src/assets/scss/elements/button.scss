@@ -1,0 +1,36 @@
+.button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &.has-icon {
+    display: inline-flex;
+    justify-content: center;
+
+    & > * + * {
+      margin-left: 1em;
+    }
+  }
+
+  &.border {
+    padding: 1em 3em;
+    border-radius: $radius;
+
+    &.border-radius {
+      border-radius: 0.25em;
+    }
+  }
+
+  &.small {
+    font-size: 0.625rem;
+  }
+
+  .responsive {
+    font-size: 0.5em;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
