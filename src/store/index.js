@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-const endPoint = 'https://restcountries.eu/rest/v2/';
-const fields = [
+const endPoint = 'https://restcountries.com/v2/';
+/**const fields = [
   'name',
   'borders',
   'alpha3Code',
@@ -15,7 +15,7 @@ const fields = [
   'topLevelDomain',
   'currencies',
   'languages',
-].join(';');
+].join(';');**/
 
 Vue.use(Vuex);
 
@@ -84,7 +84,7 @@ const store = new Vuex.Store({
       if (state.countries.length == 0 && !state.loadingState) {
         commit('changeLoading', true);
 
-        fetch(endPoint + 'all?fields=' + fields)
+        fetch(endPoint + 'all')
           .then(d => {
             d.json()
               .then(data => {
